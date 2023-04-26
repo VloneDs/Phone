@@ -15,19 +15,19 @@ class phone:
     def get_number(self): #возвращает номер телефона
         return self.number
     
-a = phone('+79157776989', 'Xiaomi redmi pro', '170')
-a.recive_call('Vlone') 
-print(a.print_data())
-print(a.get_number())
+phone1 = phone('+79157776989', 'Xiaomi redmi pro', '170')
+phone1.recive_call('Vlone') 
+print(phone1.print_data())
+print(phone1.get_number())
 print(' ')
 
-b = phone('+99106669889','Iphone X')
-b.recive_call('Sayori') 
-print(b.print_data())
-print(b.get_number())
+phone2 = phone('+99106669889','Iphone X')
+phone2.recive_call('Sayori') 
+print(phone2.print_data())
+print(phone2.get_number())
 print(' ')
 
-c = phone('+79109992233')
-c.recive_call('Qwerez')
-print(c.print_data())
-print(c.get_number())
+phone3 = phone('+79109992233')
+phone3.recive_call('Qwerez')
+print(phone3.print_data())
+print(phone3.get_number())
