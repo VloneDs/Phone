@@ -1,6 +1,6 @@
 class phone:
 
-    def __init__(self, number, model = 'неизвестен', weight = 'неизвестно') -> None: #получаем значения, если его нету, то есть значение  по умолчанию
+    def __init__(self, number = 'неизвестен', model = 'неизвестен', weight = 'неизвестно') -> None: #получаем значения, если его нету, то есть значение  по умолчанию
         self.number = number
         self.model = model 
         self.weight = weight
@@ -13,7 +13,7 @@ class phone:
         print(f'Звонит {self.name} на {self.number}')
 
     def get_number(self): #возвращает номер телефона
-        return self.number
+        return f'Номер телефона {self.number}'
     
 phone1 = phone('+79157776989', 'Xiaomi redmi pro', '170')
 phone1.recive_call('Vlone') 
@@ -31,3 +31,9 @@ phone3 = phone('+79109992233')
 phone3.recive_call('Qwerez')
 print(phone3)
 print(phone3.get_number())
+print(' ')
+
+phone4 = phone()
+phone4.recive_call('Zerta')
+print(phone4)
+print(phone4.get_number())
